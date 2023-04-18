@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.4.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.png">
+    <title>Newton || Shop Online</title>
+</head>
+<body class="bg-light">
+ 
+    <div class="head-section">
+        <img src="img/logo.png" alt="">
+        <ul class="nav bar">
+             <li class="nav-item">
+                <a class="nav-link bar" href="index.html">Home</a>
+             </li>
+            <li class="nav-item">
+                <a class="nav-link bar" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link bar" href="page.html">Catalog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="shop.html">Shop Online</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content bg-info mt-4">
+        <form id="formOne">
+            <h2> 👟ORDER FORM</h2>
+        
+
+            <h4>Ensure you fill all fields.</h4>
+            <div>
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input id="first-name" class="form-control" type="text" required>
+                </div>
+                <div class="form-group">
+                    <label for="middle-name">Middle Name</label>
+                    <input id="middle-name" class="form-control" type="text" >
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input id="last-name" class="form-control" type="text" required>
+                </div>
+            </div>
+            <div class="form-group">
+                Gender:
+                <div>
+                    <input type="radio"  name="Gender" value="Male" >
+                    <label for="Male">Male</label>  
+                </div>
+                <input type="radio" name="Gender"  value="Female" >
+                <label for="Female">Female</label>
+            </div>
+            <div class="form-group">
+                <label for="tel-number">Mobile Number</label>
+                <input id="tel-number" class="form-control" type="tel" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" class="form-control" type="email" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Residential  Address</label>
+                <input id="address" class="form-control" type="text" required>
+            </div>
+            <div class="form-group">
+                <label for="quantity">What quantity are you buying?</label>
+                <input id="quantity" class="form-control" type="number" required >
+            </div>
+            <div class="form-group">
+                <label for="shoe-type">What sneaker type are you purchasing?</label>
+            <select name="shoe-type" id="sneaker-type" required>
+                <option value="">Select Sneaker Type</option>
+                <option value="Dress and Smart"> Dress and Smart Sneakers</option>
+                <option value="Plimsoll">Plimsoll</option>
+                <option value="High-Tops">High-Tops</option>
+                <option value="Retro Sport">Retro Sport Shoes</option>
+                <option value="Slip-On">Slip-On Sneakers</option>
+                <option value="Dad Shoes">Dad Shoes</option>
+                <option value="Sock Sneakers">Sock Sneakers</option>
+            </select>
+            </div>
+            <div class="form-group">
+                <label for="sneaker-name">What sneaker are you buying?</label>
+                <select name="sneaker-name" id="sneaker-name" required>
+                    <option value="">Select Sneaker </option>
+                    <option value="Air Joradn I (N50,000)">Air Joradn I - N50,000</option>
+                    <option value="Air Joradn II (N60,000)">Air Joradn II - N60,000</option>
+                    <option value="Air Joradn IV (N90,000)">Air Joradn IV - N90,000</option>
+                    <option value="Air Joradn V (N110,000)">Air Joradn V - #110,000</option>
+                    <option value="Air Joradn VI (N125,000)">Air Joradn VI - N125,000</option>
+                    <option value="Air Joradn VII (N150,000)">Air Joradn VII - N150,000</option>
+                    <option value="Air Joradn VIII (N165,000)">Air Joradn VIII - N165,000</option>
+                    <option value="Air Joradn IX (N180,000)">Air Joradn IX - N180,000</option>
+                    <option value="Air Joradn XII (N220,000)">Air Joradn XII - N220,000</option>
+                    <option value="Adidas Super Star (N50,000)">Adidas Super Star - N50,000</option>
+                    <option value="Adidas Samba (N70,000)">Adidas Samba - N70,000</option>
+                    <option value="Adidas Stan Smith (N80,000)">Adidas Stan Smith - N80,000</option>
+                    <option value="Balenciaga Speed Light (N367,000)">Balenciaga Speed Light- N367,000</option>
+                    <option value="Balenciaga Speed Full (N486,000)">Balenciaga Speed Full- N486,000</option>
+                    <option value="Vans Authentic (N20,000)">Vans Authentic- N20,000</option>
+                    <option value="Vans Off The Wall (N30,000)">Vans Off The Wall- N30,000</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="color">What colour of shoe do you want?</label>
+                <input id="color" class="form-control" type="color" >
+                <h5>Note that this color might not be as the only color on the shoe depending on the shoe you picked.</h5>
+            </div>
+
+            Expected Payment Method:
+            <div>
+                <input type="radio"  name="payment" value="Cash" >
+                <label for="Cash">Cash</label>  
+            </div>
+            <input type="radio" name="payment"  value="Debit Card" checked>
+            <label for="Debit">Debit Card</label>
+
+            <div class="form-group">
+                <label for="order">Date of Oder</label>
+                <input id="order" class="form-control" type="date" >
+            </div>
+
+            <div class="form-group">
+                <label for="expected-date">Expected delivery date</label>
+                <input id="expected-date" class="form-control" type="date" >
+            </div>
+
+            <button type="submit" class="btn btn-success">Place Order</button>
+        </form>
+
+    </div>
+
+
+    <div class="receipt">
+        <div class="info">
+            <p class="text-center">Your order has been placed!</p>
+            <div class="smaller-text text-center">Thanks for shopping with us!</div>
+        </div>
+        <div class="contain">
+            <h1 class="text-info">RECEIPT</h1>
+                <ul>
+                    <li>Buyer Name: <span class="name1"> </span> <span class="name2"></span></li>
+                    <li>Gender: <span class="gender"></span></li>
+                    <li>Tel-Number: <span class="number"></span></li>
+                    <li>Buyer's Adress: <span class="address"></span></li>
+                    <li>Item of purchase: <span class="item"></span></li>
+                    <li>Type: <span class="type"></span></li>
+                    <li>Color: <span class="color"></span></li>
+                    <li>Quantity: <span class="quantity"></span></li>
+                    <li>Expected Payment Method: <span class="method"></span></li>
+                    <li>Date Of Order: <span class="order"></span></li>
+                    <li>Expected Delivery Date: <span class="expected"></span></li>
+
+                </ul>
+               
+            </div>
+           
+        </div>
+    </div>
+    
+</body>
+</html>
