@@ -1,4 +1,8 @@
-
+body {
+    overflow-x: hidden;
+}
+ 
+ /* Nav Bar */
 .head-section {
     display: flex;
     align-items: center;
@@ -22,6 +26,8 @@
     color: rgb(231, 231, 21);
     
  }
+
+ /* Home Page */
 .background {
 
     left: 14rem;
@@ -52,7 +58,7 @@
 }
 
 .view {
-    margin-top: 7rem;
+    margin-top: 3.0rem;
     outline: none;
     border-style: none;
     color: #000;
@@ -63,14 +69,15 @@
 }
 
 .header {
-    margin-left: 32rem;
-    margin-top: 7rem;
+    margin-left: 25rem;
+    margin-top: 10rem;
 }
 
 .gallery {
     display: flex;
     align-items: center;
-    margin-left: 13.6rem;
+    gap: 0px;
+    margin-left: 7.6rem;
     margin-bottom: 5rem;
 }
 
@@ -80,16 +87,14 @@
 }
 
 .image2 {
-    margin-left: -9rem;
+    margin-left: -8rem;
 }
 
 .image3 {
-    margin-top: -4rem;
-    height: 260px;
-    width: 200px;
-    margin-left: 0rem;
+    margin-left: -8rem;
 }
 
+/* Shop Online Page */
 
 .content {
     width: 60%;
@@ -141,9 +146,32 @@ span {
     display: none;
 }
 
+/* Footer */
 .footer p {
     color: white;
     font-size: 22px;
     margin-bottom: 0px;
     height: 40px;
+}
+/* Catalog */
+
+.custom-container {
+    margin-left: 15%; 
+    
+ } 
+.pic img {
+    width: 260px;
+    height: 300px;
+}
+.image-gallery {
+    margin-top: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.caption {
+    background-color: rgb(153, 152, 152);
+    color: #ffffff;
+    font-size: 1.2rem;
 }
