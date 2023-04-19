@@ -17,7 +17,7 @@ $(document).ready(function() {
         const genderInput = $("input:radio[name=Gender]:checked").val();
         const methodInput = $("input:radio[name=payment]:checked").val();
         
-
+        //Insert input values into receipt
         $(".name1").text(firstNameInput);
         $(".name2").text(lastNameInput);
         $(".number").text(numberInput);
@@ -31,6 +31,7 @@ $(document).ready(function() {
         $(".order").text(orderDateInput);
         $(".expected").text(expectedDateInput);
 
+         //View Receipt
         $(".content").hide();
         $(".receipt").show();
 
